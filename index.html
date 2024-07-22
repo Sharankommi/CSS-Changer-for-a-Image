@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<script>, initial-scale=1.0">
+    <title>CSS Changer</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <h1>Change the css of below image! With the sliders</h1>
+        <span class="heading">Javascript</span>
+
+        <div class="controller">
+            <label for="base">Base Colour</label>
+            <input type="color" id="base" name="base" value="#ff0000"> 
+
+            <label for="width">Width</label>
+            <input
+                type="range"
+                min="0"
+                max="100"
+                id="width"
+                name="width"
+                value="50"
+                data-sizing="%"
+            >
+
+            <label for="border-radius">Border-Radius</label>
+            <input
+                type="range"
+                min="0"
+                max="100"
+                id="border-radius"
+                name="border-radius"
+                value="5"
+                data-sizing="px"
+            >
+
+            <label for="padding">Padding</label>
+            <input
+                type="range"
+                min="10"
+                max="100"
+                id="padding"
+                name="padding"
+                value="0"
+                data-sizing="px"
+            >
+
+            <label for="blur">Blur</label>
+            <input
+                type="range"
+                min="0"
+                max="25"
+                id="blur"
+                name="blur"
+                value="0"
+                data-sizing="px"
+            >
+
+        </div>
+        <img src="pic.jpg"/>
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>
